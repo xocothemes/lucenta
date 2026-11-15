@@ -15,7 +15,7 @@ const { title, description, cover, coverAlt, category, date } = entry.data;
 ---
 
 <article class:list={["entry reveal group", wide && "entry-wide", className]}>
-  <a href={entryHref(entry)} class="entry-link" data-cursor="Read">
+  <a href={entryHref(entry)} class="entry-link">
     {
       cover && (
         <div class="media entry-media">

@@ -23,10 +23,10 @@ Lucenta is a free Astro theme for design studios, creative agencies and portfoli
 - A client marquee that drifts on its own and speeds up and turns with the scroll
 - A services page with deliverables, a featured project and related work for each service
 - A studio page with the story, figures, team portraits and bios, process, recognition and a client grid
-- A journal with categories, pagination, reading time, related projects and RSS
+- A journal with categories, pagination, reading time, related projects, RSS, and a share card that opens the phone's own share sheet or a sharing dialog on desktop
 - A contact page with a project enquiry form, live studio clocks and an FAQ
 - A solid header that takes its tone and colour from what is under it, and hides while scrolling down
-- A full-screen mobile menu, magnetic buttons, rolling link labels and a cursor label over images
+- A full-screen mobile menu and rolling link labels
 - Canonical URLs, sitemap, RSS, Open Graph, Twitter/X cards, and JSON-LD for case studies and articles
 - Static output with no framework islands; every effect switches off under `prefers-reduced-motion`
 - Skip link, landmarks, labelled controls, visible focus states, and keyboard support for every menu, filter and form

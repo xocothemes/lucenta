@@ -3,6 +3,8 @@ import type { GetStaticPaths, InferGetStaticPropsType } from "astro";
 import { getEntries, render } from "astro:content";
 import { Image, getImage } from "astro:assets";
 import EntryCard from "@/components/journal/EntryCard.astro";
+import ShareCard from "@/components/journal/ShareCard.astro";
+import { siteConfig } from "@/config/site";
 import Icon from "@/components/ui/Icon.astro";
 import Roll from "@/components/ui/Roll.astro";
 import WorkCard from "@/components/work/WorkCard.astro";
@@ -85,6 +87,9 @@ const share = cover ? await getImage({ src: cover, width: 1200 }) : undefined;
     <div class="shell section">
       <div class="prose entry-prose mx-auto max-w-[44rem]">
         <Content />
+      </div>
+      <div class="mx-auto mt-16 max-w-[44rem]">
+        <ShareCard title={title} url={new URL(`/journal/${entry.id}/`, siteConfig.siteUrl).toString()} />
       </div>
     </div>
   </article>

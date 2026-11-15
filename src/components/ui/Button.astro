@@ -14,7 +14,7 @@ interface Props {
 const { href, label, variant = "solid", arrow = true, class: className } = Astro.props;
 ---
 
-<a href={href} class:list={["btn", variant === "ghost" && "btn-ghost", !arrow && "btn-plain", className]} data-magnetic>
+<a href={href} class:list={["btn", variant === "ghost" && "btn-ghost", !arrow && "btn-plain", className]}>
   <Roll text={label} />
   {
     arrow && (

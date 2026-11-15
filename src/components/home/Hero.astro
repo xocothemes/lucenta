@@ -58,7 +58,7 @@ const span = years.length ? `${Math.min(...years)}–${String(Math.max(...years)
   {
     work.length > 0 && (
       <div class="showcase mt-[clamp(3rem,6vw,6rem)]" data-expand>
-        <a href="/work/" class="showcase-media" data-reel="1500" data-cursor="All work" aria-label="See all work">
+        <a href="/work/" class="showcase-media" data-reel="1500" aria-label="See all work">
           {work.map((item, i) => (
             <Image
               src={item.data.cover}

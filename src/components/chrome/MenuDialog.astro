@@ -12,9 +12,8 @@ const path = Astro.url.pathname;
   <div class="shell flex min-h-full flex-col">
     <div class="flex h-(--header-h) items-center justify-between">
       <a href="/" aria-label={`${siteConfig.name}, home`}><Logo /></a>
-      <button type="button" class="menu-close" data-menu-close>
-        <Icon name="x" class="size-4" />
-        Close
+      <button type="button" class="menu-close" aria-label="Close menu" data-menu-close>
+        <Icon name="x" class="size-7" stroke={1.5} />
       </button>
     </div>
     <nav aria-label="Menu" class="flex-1 py-10">
@@ -33,13 +32,12 @@ const path = Astro.url.pathname;
     </nav>
     <div class="menu-foot grid gap-6 py-8 sm:grid-cols-2">
       <a href={`mailto:${siteConfig.email}`} class="display display-sm link-under justify-self-start">{siteConfig.email}</a>
-      <ul class="flex flex-wrap gap-2 sm:justify-end">
+      <ul class="flex flex-wrap gap-3 sm:justify-end">
         {
           siteConfig.socials.map((social) => (
             <li>
-              <a href={social.href} class="chip gap-2" {...outbound(social.href, "me noopener")}>
-                <Icon name={socialIcon(social.label)} class="size-3.5" />
-                {social.label}
+              <a href={social.href} class="social-icon menu-social" aria-label={social.label} {...outbound(social.href, "me noopener")}>
+                <Icon name={socialIcon(social.label)} class="size-6" />
               </a>
             </li>
           ))
@@ -79,16 +77,16 @@ const path = Astro.url.pathname;
   }
 
   .menu-close {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
     height: 2.75rem;
-    padding-inline: 1.25rem;
-    border-radius: 999px;
-    background: var(--ink);
-    color: var(--paper);
-    font-weight: 600;
-    font-size: 0.925rem;
+    margin-right: -0.6rem;
+  }
+
+  .menu-social {
+    width: 4rem;
+    height: 4rem;
   }
 
   .menu-item {

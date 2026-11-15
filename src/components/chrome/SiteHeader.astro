@@ -33,12 +33,11 @@ const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWi
       </ul>
     </nav>
     <div class="flex items-center gap-2">
-      <a href={siteConfig.action.href} class="header-cta hidden sm:inline-flex" data-magnetic>
+      <a href={siteConfig.action.href} class="header-cta hidden sm:inline-flex">
         <Roll text={siteConfig.action.label} />
       </a>
-      <button type="button" class="header-menu" aria-haspopup="dialog" aria-controls="menu" data-menu-open>
+      <button type="button" class="header-menu" aria-label="Menu" aria-haspopup="dialog" aria-controls="menu" data-menu-open>
         <span class="menu-lines" aria-hidden="true"><span></span><span></span></span>
-        Menu
       </button>
     </div>
   </div>
@@ -88,8 +87,7 @@ const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWi
     translate: -50% 0;
   }
 
-  .header-cta,
-  .header-menu {
+  .header-cta {
     align-items: center;
     gap: 0.6rem;
     height: 2.75rem;
@@ -105,7 +103,11 @@ const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWi
   }
 
   .header-menu {
-    display: inline-flex;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-right: -0.6rem;
   }
 
   @media (min-width: 64rem) {
@@ -116,12 +118,12 @@ const isCurrent = (href: string) => (href === "/" ? path === "/" : path.startsWi
 
   .menu-lines {
     display: grid;
-    gap: 0.3rem;
-    width: 1rem;
+    gap: 0.4rem;
+    width: 1.5rem;
   }
 
   .menu-lines span {
-    height: 1.5px;
+    height: 2px;
     background: currentColor;
     border-radius: 2px;
   }

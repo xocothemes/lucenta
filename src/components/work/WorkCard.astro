@@ -13,7 +13,7 @@ const { title, headline, cover, coverAlt, disciplines, year, color } = work.data
 ---
 
 <article class:list={["work-card group", className]} data-work-item data-disciplines={disciplines.join(" ")} style={`--tint:${color}`}>
-  <a href={workHref(work)} class="block" data-cursor="View">
+  <a href={workHref(work)} class="block">
     <div class="media card-media" data-vt={transitionName(work)}>
       <Image
         src={cover}

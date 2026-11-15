@@ -82,16 +82,14 @@ The form posts to `siteConfig.contact.action` once `siteConfig.contact.enabled` 
 
 Every scroll and pointer effect lives in [src/scripts/motion.ts](./src/scripts/motion.ts) and attaches to a data attribute, so markup decides where it runs:
 
-| Attribute       | Effect                                                                                   |
-| --------------- | ---------------------------------------------------------------------------------------- |
-| `data-reel`     | Cycles through children marked `data-frame` (the value is the interval in milliseconds). |
-| `data-expand`   | Grows from an inset card to full bleed as it scrolls in.                                 |
-| `data-words`    | Words light up one by one across the screen.                                             |
-| `data-marquee`  | Drifts on its own and speeds up and turns with the scroll.                               |
-| `data-count`    | Counts up to its value once, when it comes into view.                                    |
-| `data-follow`   | An image (`data-follow-image`) trails the pointer over items marked `data-follow-key`.   |
-| `data-cursor`   | Shows a round label that follows the pointer, with the attribute's text.                 |
-| `data-magnetic` | The element leans toward the pointer.                                                    |
+| Attribute      | Effect                                                                                   |
+| -------------- | ---------------------------------------------------------------------------------------- |
+| `data-reel`    | Cycles through children marked `data-frame` (the value is the interval in milliseconds). |
+| `data-expand`  | Grows from an inset card to full bleed as it scrolls in.                                 |
+| `data-words`   | Words light up one by one across the screen.                                             |
+| `data-marquee` | Drifts on its own and speeds up and turns with the scroll.                               |
+| `data-count`   | Counts up to its value once, when it comes into view.                                    |
+| `data-follow`  | An image (`data-follow-image`) trails the pointer over items marked `data-follow-key`.   |
 
 Section reveals and parallax use CSS scroll-driven animations: `.reveal` and `.reveal-img` (with an IntersectionObserver fallback), and `.parallax` on an image frame to let its image drift inside it. Page transitions are native cross-document view transitions; the clicked project card morphs into the case study cover. Under `prefers-reduced-motion` all of it is off and the reel shows its first image.
 

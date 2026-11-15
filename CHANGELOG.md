@@ -14,7 +14,7 @@ All notable changes to Lucenta are documented here.
 - Work index with discipline filters and a list view whose rows flood with the project colour.
 - A manifesto that lights up word by word, counters, a velocity-driven client marquee, and a cursor-following image over lists.
 - Services page with deliverables and related work, and a studio page with team, process, recognition and clients.
-- Journal with categories, pagination, reading time, related work and RSS.
+- Journal with categories, pagination, reading time, related work, RSS and a share card.
 - Contact page with a project enquiry form, live studio clocks and an FAQ.
 - A solid header that takes its tone and colour from what sits under it, and a full-screen mobile menu.
 - Self-hosted Epilogue and Mona Sans.

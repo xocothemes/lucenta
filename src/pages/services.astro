@@ -58,7 +58,7 @@ const rows = services.map((service) => {
         </div>
 
         {service.hero && (
-          <a href={workHref(service.hero)} class="group mt-[clamp(2rem,4vw,3.5rem)] block" data-cursor="View">
+          <a href={workHref(service.hero)} class="group mt-[clamp(2rem,4vw,3.5rem)] block">
             <div class="media reveal-img service-media">
               <Image src={service.hero.data.cover} alt={service.hero.data.coverAlt} widths={[800, 1400, 2000, 2400]} sizes="(min-width: 110rem) 105rem, 100vw" class="zoom-img" />
             </div>

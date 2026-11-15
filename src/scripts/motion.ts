@@ -45,7 +45,7 @@ const toneUnderHeader = () => {
   const y = header.offsetHeight / 2;
   const below = document
     .elementsFromPoint(window.innerWidth / 2, y)
-    .find((el) => !header.contains(el) && !el.closest("[data-cursor-dot]"));
+    .find((el) => !header.contains(el));
   const surface = below?.closest("[data-tone], .on-ink, .ink-light, .ink-dark, .media, img");
   const tone =
     surface instanceof HTMLElement && surface.dataset.tone
@@ -213,58 +213,6 @@ if (!reduce) {
 }
 
 if (!reduce && finePointer) {
-  /* ---------- Cursor label over images ---------- */
-
-  const cursor = document.querySelector<HTMLElement>("[data-cursor-dot]");
-  const label = cursor?.querySelector("span");
-  let mx = -100;
-  let my = -100;
-  let cx = mx;
-  let cy = my;
-  window.addEventListener(
-    "pointermove",
-    (event) => {
-      mx = event.clientX;
-      my = event.clientY;
-    },
-    { passive: true },
-  );
-  if (cursor && label) {
-    document.addEventListener("pointerover", (event) => {
-      const target = (event.target as Element).closest<HTMLElement>("[data-cursor]");
-      if (target) {
-        label.textContent = target.dataset.cursor || "View";
-        cursor.setAttribute("data-active", "");
-      } else {
-        cursor.removeAttribute("data-active");
-      }
-    });
-    document.addEventListener("pointerleave", () => cursor.removeAttribute("data-active"));
-    const follow = () => {
-      cx = lerp(cx, mx, 0.2);
-      cy = lerp(cy, my, 0.2);
-      cursor.style.transform = `translate3d(${cx}px, ${cy}px, 0)`;
-      requestAnimationFrame(follow);
-    };
-    requestAnimationFrame(follow);
-  }
-
-  /* ---------- Magnetic buttons ---------- */
-
-  for (const el of all("[data-magnetic]")) {
-    el.addEventListener("pointermove", (event) => {
-      const rect = el.getBoundingClientRect();
-      const dx = event.clientX - (rect.left + rect.width / 2);
-      const dy = event.clientY - (rect.top + rect.height / 2);
-      el.style.transform = `translate(${dx * 0.22}px, ${dy * 0.32}px)`;
-    });
-    el.addEventListener("pointerleave", () => {
-      el.style.transform = "";
-    });
-    el.style.transition =
-      "transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s, color 0.4s";
-  }
-
   /* ---------- An image that trails the pointer over a list ---------- */
 
   for (const list of all("[data-follow]")) {

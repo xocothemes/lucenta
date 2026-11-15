@@ -6,15 +6,15 @@ disciplines: [packaging, identity]
 sector: Botanical drinks
 year: 2024
 location: Oslo
-color: "#C6D43C"
-ink: dark
+color: "#530382"
+ink: light
 cover: ./cover.jpg
-coverAlt: Two small glasses of bright green aperitif casting long, light-streaked shadows on white
+coverAlt: A clear bottle and two tumblers of glowing chartreuse aperitif on a travertine slab, casting green light against a deep violet wall
 stills:
   - src: ./still-1.jpg
-    alt: Two glasses of green aperitif seen from above with coloured reflections
+    alt: A tumbler of glowing green aperitif with a sprig of juniper on the rim, against violet
   - src: ./still-2.jpg
-    alt: A single glass of green aperitif glowing in hard side light
+    alt: Three tumblers and a bottle of green aperitif seen from above, throwing green light across a violet surface
 results:
   - value: "Gold"
     label: Pentawards, packaging
@@ -39,7 +39,7 @@ Juniper's founders distil an aperitif from juniper, sorrel and garden herbs fora
 
 ## The idea
 
-The drink is the colour. We made the green itself the brand: a clear bottle, one word on the front, and every image shot in hard light so the liquid glows and throws its colour across the table.
+The drink is the colour. We made the green itself the brand: a clear bottle, a plain cream label, and every image shot in hard light against one deep violet, so the liquid glows and throws its colour across the table.
 
 ## What we made
 

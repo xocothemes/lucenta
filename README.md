@@ -96,12 +96,11 @@ MIT — free for personal and commercial projects. See [LICENSE](./LICENSE), whi
 - The fictional client logos are set in typefaces under the SIL Open Font License, converted to outlines
 - [Lucide](https://lucide.dev/), under the ISC License
 - [Bootstrap Icons](https://icons.getbootstrap.com/), under the MIT License
-- Generated with OpenAI image generation for this theme: the Halden, Lumio and Ostra case studies, the Kiln cover and first still, and the Veldt cover
+- Generated with OpenAI image generation for this theme: the Halden, Juniper, Lumio and Ostra case studies, the Kiln cover and first still, and the Veldt cover
 - Team portraits from [Pexels](https://www.pexels.com/) under the Pexels License: Mira Castell by Ehsan, Jonah Pierce by Uluç Erdem Ersen, Lena Brandt by Andreza Abras
 - Photographs from [Unsplash](https://unsplash.com/) under the Unsplash License:
   - Tidewater case study by Lena Polishko
   - Kitebird case study by Moment InFocus
-  - Juniper case study by Reinis Brūzītis
   - Kiln second still by Barney Goodman
   - Veldt stills by Mohamed Abira and Marek Piwnicki
   - Journal covers by Andy Brown, Alice Yamamura, Tyler Lastovich, Yaoqi, Luke Heibert and Fiona Murray-deGraaff

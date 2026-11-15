@@ -9,12 +9,10 @@ location: London
 color: "#F4C3D6"
 ink: dark
 cover: ./cover.jpg
-coverAlt: Bright blue over-ear headphones lying on a blush pink surface with a hard shadow
+coverAlt: Black wired headphones with turquoise lemon-slice ear cups, their cable plugged into a turquoise lemon, on blush pink
 stills:
   - src: ./still-1.jpg
-    alt: A pineapple wearing black headphones against a pink backdrop
-  - src: ./still-2.jpg
-    alt: Headphones with turquoise lemon-slice ear cups beside a turquoise lemon on lilac pink
+    alt: Black headphones with blue citrus-slice ear cups standing on a periwinkle blue backdrop, casting a long shadow
 results:
   - value: "£1.4M"
     label: Pre-orders before launch

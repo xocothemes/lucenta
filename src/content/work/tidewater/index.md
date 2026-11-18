@@ -26,7 +26,7 @@ credits:
   - role: Design
     name: Lena Brandt
   - role: Signage
-    name: Amara Nwosu
+    name: Nadia Kerr
 featured: false
 order: 6
 ---

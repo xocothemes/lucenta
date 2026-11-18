@@ -2,7 +2,7 @@
 
 All notable changes to Lucenta are documented here.
 
-## Unreleased
+## 1.0.0 - 2026-11-18
 
 - Initial release.
 - Astro 7 theme for design studios and agencies with home, work, case study, services, studio, journal, category archive, entry, contact, privacy, terms, RSS, robots, sitemap, and 404 routes.

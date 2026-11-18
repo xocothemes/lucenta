@@ -30,7 +30,7 @@ credits:
   - role: Creative direction
     name: Jonah Pierce
   - role: Art direction
-    name: Amara Nwosu
+    name: Nadia Kerr
   - role: Motion
     name: Yuki Tanabe
 featured: true

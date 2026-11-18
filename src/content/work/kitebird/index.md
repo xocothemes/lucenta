@@ -22,13 +22,13 @@ results:
     label: Average customer review
 testimonial:
   quote: Every other headphone brand looked like a bank. Lucenta made us look like the best party in town, and the sell-outs followed.
-  name: Priya Lal
+  name: Anouk Visser
   role: Co-founder, Kitebird
 credits:
   - role: Creative direction
     name: Jonah Pierce
   - role: Design
-    name: Amara Nwosu
+    name: Nadia Kerr
   - role: Development
     name: Tomás Reyes
 featured: false

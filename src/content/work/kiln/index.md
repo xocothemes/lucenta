@@ -24,7 +24,7 @@ results:
     label: Pieces shot on white
 credits:
   - role: Art direction
-    name: Amara Nwosu
+    name: Nadia Kerr
   - role: Development
     name: Tomás Reyes
   - role: Photography

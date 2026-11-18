@@ -30,7 +30,7 @@ credits:
   - role: Creative direction
     name: Mira Castell
   - role: Design
-    name: Amara Nwosu
+    name: Nadia Kerr
   - role: Development
     name: Tomás Reyes
   - role: Motion

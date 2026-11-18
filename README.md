@@ -73,13 +73,13 @@ npm run release:check
 
 See [CUSTOMIZATION.md](./CUSTOMIZATION.md) for site settings, the logo, navigation, the work, people and journal collections, services, the homepage, studio and contact pages, the contact form, the motion attributes, and the theme's design tokens.
 
-Set `siteConfig.siteUrl` in [src/config/site.ts](./src/config/site.ts) before building — canonical URLs, share images, the sitemap, and the feed are all derived from it. The build is static, so any host that serves a directory works: `vercel.json` is included for Vercel and `wrangler.jsonc` for Cloudflare Workers, and Netlify, GitHub Pages, and object storage behind a CDN need no configuration beyond `npm run build`.
+Set `siteConfig.siteUrl` in [src/config/site.ts](./src/config/site.ts) before building: canonical URLs, share images, the sitemap, and the feed are all derived from it. The build is static, so any host that serves a directory works: `vercel.json` is included for Vercel and `wrangler.jsonc` for Cloudflare Workers, and Netlify, GitHub Pages, and object storage behind a CDN need no configuration beyond `npm run build`.
 
 ## Content
 
 Projects live in [src/content/work](./src/content/work), the team in [src/content/people](./src/content/people), and the journal in [src/content/journal](./src/content/journal). Each entry is a folder with an `index.md` and the images it uses, validated by the schemas in [src/content.config.ts](./src/content.config.ts). Page copy is in [src/config](./src/config).
 
-The bundled demo content is fictional — the studio, its clients, people, testimonials, results and awards are invented, so **replace them before launch.** The portraits are stock photographs of people with no connection to the names beside them, the project images stand in for work that does not exist, and the client logos are fictional marks.
+The bundled demo content is fictional: the studio, its clients, people, testimonials, results and awards are invented, so **replace them before launch.** The portraits are stock photographs of people with no connection to the names beside them, the project images stand in for work that does not exist, and the client logos are fictional marks.
 
 ## Support
 
@@ -87,7 +87,7 @@ Lucenta is free and provided as-is. Bug reports and questions are welcome as [Gi
 
 ## License
 
-MIT — free for personal and commercial projects. See [LICENSE](./LICENSE), which also lists the licenses of the bundled fonts, icons and photographs.
+MIT: free for personal and commercial projects. See [LICENSE](./LICENSE), which also lists the licenses of the bundled fonts, icons and photographs.
 
 ## Credits
 
